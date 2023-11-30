@@ -1,0 +1,46 @@
+<div class="main_wrapper" [ngClass]="upperSpace? 'wrapper__space':''">
+    <div class="main_container">
+      <img
+        *ngIf="isLeftImage"
+        src="assets/design.svg"
+        style="display: inline-flex"
+        class="image"
+      />
+      <div [ngClass]="isLeftImage? 'image_inline__left':'image_inline'">
+        <div class="main_header">{{ title }}</div>
+        <div class="main_line"></div>
+        <div class="">
+          {{ subHeader }}
+        </div>
+        <div class="main_text">
+          <p>{{ description }}</p>
+        </div>
+      </div>
+      <img *ngIf="!isLeftImage" src="assets/design.svg"  class="image"/>
+      <!-- image  should be added -->
+    </div>
+    
+    <div class="main_container">
+      <ng-template ngFor let-item [ngForOf]="items">
+        <div class="grid_item">
+          <div class="item_header">{{ item.title }}</div>
+          <div class="item_line"></div>
+          <div class="item_text">
+            <ng-template
+            ngFor
+            let-desc
+            [ngForOf]="item.description">
+            <p>{{desc.title}}</p>
+            <ul style="list-style-type: none;">
+              <li *ngFor="let i of desc.item">{{i}}</li>
+            </ul>
+
+            </ng-template>
+           
+           
+          </div>
+        </div>
+      </ng-template>
+    </div>
+</div>
+

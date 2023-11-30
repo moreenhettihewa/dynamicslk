@@ -1,0 +1,146 @@
+.main_header {
+    color: #d5d5d5;
+    font-size: 35px;
+    font-family: Roboto-Bold, Roboto;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+  }
+  
+  .main_line {
+    width: 80px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #5e9aa4;
+  }
+  
+  .main_text {
+    text-align: left;
+    max-width: 600px;
+    color: #fff;
+    font-size: 15px;
+    font-family: Roboto-Light, Roboto;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+  
+  .image_inline__left {
+    padding-top: 60px;
+    padding-left: 30px;
+  }
+  
+  .image_inline {
+    padding-top: 60px;
+    padding-left: 0px;
+  }
+  
+  .wrapper__space{
+    padding-top: 80px;
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  
+  @media screen and (min-width: 992px) {
+    .main_wrapper {
+      /* padding-top: 80px; */
+      /* display: inline-flex; */
+    }
+    .main_container {
+      display: flex;
+      justify-content: center;
+    }
+    .item_text {
+      max-width: 600px;
+    }
+    .grid_item {
+      float: none;
+    }
+    .image {
+      height: 15%;
+      width: 15%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  
+  @media screen and (min-width: 600px) {
+    /* For tablets */
+    .main_container {
+      /* display: inline-block; */
+    }
+    .grid_item {
+      float: none;
+    }
+    .image {
+      height: 35%;
+      width: 35%;
+    }
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .main_container {
+      display: inline-block;
+    }
+    .grid_item {
+      float: none;
+    }
+    .image {
+      height: 35%;
+      width: 35%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .main_container {
+      /* display: inline-block; */
+    }
+    .grid_item {
+      float: none;
+    }
+    .image {
+      height: 35%;
+      width: 35%;
+    }
+  
+  }
+  
+  .grid_item {
+    min-width: 280px;
+    height: 300px;
+    background-color: #1a1a1a;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    float: left;
+  }
+  
+  .item_header {
+    transform: translate(30px, 30px);
+    color: #5e9aa4;
+    font-size: 25px;
+    font-family: Roboto-Bold, Roboto;
+    font-weight: 700;
+    max-width: 230px;
+  }
+  
+  .item_text {
+    transform: translate(30px, 35px);
+    color: #fff;
+    font-size: 15px;
+    font-family: Roboto-Light, Roboto;
+    font-weight: 300;
+    max-width: 230px;
+    text-align: left;
+    /* letter-spacing: 0.025em; */
+  }
+  
+  .item_line {
+    width: 60px;
+    transform: translate(30px, 40px);
+    height: 4px;
+    border-radius: 5px;
+    background-color: #5e9aa4;
+  }
+  

@@ -1,0 +1,39 @@
+.heading{
+    /* color: #bebebc; */
+    font-size: 16px;
+    font-family: Roboto-Light, Roboto;
+    font-weight: 300;
+  }
+  
+  .nav-link a.active{
+    border-bottom: 4px solid #5e9aa4;
+  }
+  
+  #header {
+    background-color: #1a1a1a;
+    position: fixed;
+    height: 71px;
+    width: 100%;  
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  #nav-bar {
+    margin-top: 20px;
+  }
+  
+  .nav-link a {
+    float:  left;
+    text-decoration: none;
+    display: block;
+    font-family: Roboto-Light, Roboto;
+    padding: 8px;
+    color: white;
+  }
+  
+  #nav-bar li {
+    display: inline;
+    float: right;
+    margin-right: 50px;
+  }

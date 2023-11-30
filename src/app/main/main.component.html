@@ -1,0 +1,53 @@
+<header id="header">
+    <!-- <img  alt="logo" id="header-img" style="width: 60px ;height: 60px;"> -->
+    <nav id="nav-bar">
+        <ul>
+            <li class="nav-link"><a href="#contact"  (click)="goToContact()" class="{{getClassActive(6)}}" id="6">Contact Us</a></li>
+            <li class="nav-link"><a href="#about"  (click)="goToAbout()"  class="{{getClassActive(5)}}" id="5">About Us</a></li>
+            <li class="nav-link"><a href="#development"  (click)="goToDevelopment()" class="{{getClassActive(4)}}" id="4">Development</a></li>
+            <li class="nav-link"><a href="#simulation"   (click)="goToSimulation()"  class="{{getClassActive(3)}}" id="3">Simulation</a></li>
+            <li class="nav-link"><a href="#design"  (click)="goToDesign()"  class="{{getClassActive(2)}}" id="2">Design</a></li>
+            <li class="nav-link"><a  href="#home" (click)="goToHome()" class="{{getClassActive(1)}}" id="1">Home</a></li>        
+        </ul>
+    </nav>
+   
+  </header>
+  
+  <div>
+    <img id="home"
+      style="display: block; margin-left: auto; margin-right: auto; padding-top: 10%;padding-bottom: 10%;"
+      src="assets/logo.svg"
+    />
+  </div>
+  
+  <!-- design section -->
+  <app-page
+    [isLeftImage]="true"
+    [title]="designTitle"
+    [subHeader]="designSubHeader"
+    [description]="designDescription"
+    [items]="designItems"
+  ></app-page>
+  
+  <!-- simulation section -->
+  <app-page [isLeftImage]="false" id="simulation" 
+  [upperSpace]=true
+  [title]="simulationTitle"
+  [subHeader]="simulationSubHeader"
+  [description]="simulationDescription"
+  [items]="simulationItems"></app-page>
+  
+  <!-- development section -->
+  <app-page id="development"
+  [upperSpace]=true
+    [isLeftImage]="true"
+    [title]="developTitle"
+    [subHeader]="developSubHeader"
+    [description]="developDescription"
+    [items]="developItems"
+  ></app-page>
+  
+  <!-- about section -->
+  
+  <!-- clients -->
+  

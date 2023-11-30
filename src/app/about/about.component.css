@@ -1,0 +1,34 @@
+
+.item--main{
+    color:#5e9aa4;
+    font-size:25px;
+    font-family: Roboto-Bold, Roboto;
+    font-weight:700;
+}
+
+.item--sub{
+  color: #fff;
+  font-size: 15px;
+  font-family: Roboto-Light, Roboto;
+  font-weight: 300;
+  width: 250px;
+  letter-spacing: 0.025em;
+}
+
+.item--line{ 
+    width: 60px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #5e9aa4;
+}
+
+.grid-item {
+    display: inline-block;
+    transform: translate(10%,10%);
+    background-color:#1a1a1a;
+    color: white;
+    margin-left: 5%;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 20px;
+  }
