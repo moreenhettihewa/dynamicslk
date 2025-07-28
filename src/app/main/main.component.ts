@@ -3,11 +3,11 @@ import { Component, HostListener } from '@angular/core';
 import { PageComponent } from '../page/page.component';
 
 @Component({
-  selector: 'app-main',
-  standalone: true,
-  imports: [CommonModule, PageComponent],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.css'
+    selector: 'app-main',
+    standalone: true,
+    imports: [CommonModule, PageComponent],
+    templateUrl: './main.component.html',
+    styleUrl: './main.component.css'
 })
 export class MainComponent {
   currentId: number = 1;
