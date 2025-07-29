@@ -51,16 +51,16 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "test:build:production"
+              "buildTarget": "dynamicslk:build:production"
             },
             "development": {
-              "buildTarget": "test:build:development"
+              "buildTarget": "dynamicslk:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular/build:extract-i18n",
+          "builder": "@angular/build:extract-i18n"
         },
         "test": {
           "builder": "@angular/build:karma",
