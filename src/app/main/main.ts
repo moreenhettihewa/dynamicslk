@@ -1,18 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { PageComponent } from '../page/page.component';
+import { Page } from '../page/page';
 
 @Component({
     selector: 'app-main',
     standalone: true,
-    imports: [CommonModule, PageComponent],
-    templateUrl: './main.component.html',
-    styleUrl: './main.component.css'
+    imports: [CommonModule, Page],
+    templateUrl: './main.html',
+    styleUrl: './main.css'
 })
-export class MainComponent {
+export class Main{
   currentId: number = 1;
   headerVisible:boolean = false;
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', [])
   onWindowScroll() {
     // this.headerVisible = true;
    
@@ -22,7 +22,6 @@ export class MainComponent {
       document.getElementById("video")!.style.filter= "blur("+( window.pageYOffset -100) * (10-0) /800 + "px)";
 
     }
-
 
   }
 

@@ -4,11 +4,10 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-root',
-    standalone: true,
-    imports: [CommonModule, RouterOutlet],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.css'
+    imports: [RouterOutlet],
+    templateUrl: './app.html',
+    styleUrl: './app.css'
 })
-export class AppComponent {
+export class App {
   title = 'dynamicslk';
 }

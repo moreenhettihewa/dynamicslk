@@ -1,24 +1,24 @@
 import { Routes } from '@angular/router';
-import { MainComponent } from './main/main.component';
-import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { PageComponent } from './page/page.component';
+import { Main } from './main/main';
+import { Footer } from './footer/footer';
+import { About } from './about/about';
+import { Page } from './page/page';
 
 
 export const routes: Routes = [
     {
-      path: '', component: MainComponent
+      path: '', component: Main
     },
     {
       path: 'footer',
-      component: FooterComponent
+      component: Footer
     }, {
       path: 'about',
-      component: AboutComponent
+      component: About
     },
     {
       path: 'sample',
-      component: PageComponent
+      component: Page
     },
     { path: '**', redirectTo: '' }
   ];

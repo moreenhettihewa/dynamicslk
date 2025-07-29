@@ -5,10 +5,10 @@ import { Component, Input } from '@angular/core';
     selector: 'app-page',
     standalone: true,
     imports: [CommonModule],
-    templateUrl: './page.component.html',
-    styleUrl: './page.component.css'
+    templateUrl: './page.html',
+    styleUrl: './page.css'
 })
-export class PageComponent {
+export class Page {
   @Input()
   title: string | undefined;
 

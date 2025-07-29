@@ -5,10 +5,10 @@ import { Component, Input } from '@angular/core';
     selector: 'app-footer',
     standalone : true,
     imports: [CommonModule],
-    templateUrl: './footer.component.html',
-    styleUrl: './footer.component.css'
+    templateUrl: './footer.html',
+    styleUrl: './footer.css'
 })
-export class FooterComponent {
+export class Footer {
 
   @Input()
   footerContent: FooterData[] | undefined;
